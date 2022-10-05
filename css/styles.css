@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #121417;
+  color: #959eac;
+  font-family: "Overpass", cursive;
+  font-size: 15px; }
+
+h1 {
+  color: white; }
+
+button {
+  border: none;
+  border-radius: 25px; }
+
+.btn-submit {
+  width: 100%;
+  height: 43px;
+  background-color: #fb7413;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer; }
+  .btn-submit:hover {
+    background-color: white;
+    color: #fb7413; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.rating-container {
+  width: 360px;
+  height: 375px;
+  max-width: 375px;
+  max-height: 375px;
+  margin: 2em;
+  background-color: #1E252F;
+  border-radius: 5%;
+  display: flex; }
+
+.hide {
+  display: none; }
+
+.rating-scale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5em; }
+
+.rating-state-end, .rating-state-start {
+  width: 100%;
+  height: 100%;
+  padding: 2em; }
+
+.rating-state-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5em;
+  display: none; }
+
+.circle, .btn-circle {
+  background-color: #252d37;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #959eac; }
+
+.btn-circle:focus {
+  background-color: #959eac;
+  color: white; }
+
+.btn-circle:hover {
+  background-color: #fb7413;
+  color: white; }
+
+.message, .message-end {
+  line-height: 1.5; }
+  .message-end {
+    text-align: center; }
+
+.title-end {
+  text-align: center;
+  margin: .5em 0 0 0; }
+
+.rating-selected {
+  background-color: #252d37;
+  padding: .6em  1em;
+  color: #fb7413;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.rating-value::after, .rating-value::before {
+  content: ' ';
+  width: 15px;
+  height: 100%; }
